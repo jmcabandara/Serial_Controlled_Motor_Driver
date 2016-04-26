@@ -1,0 +1,5 @@
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|566f9a2d-a697-41f3-bf3d-85e341d3c789
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|3707e73b-9500-4e3a-8eb9-a2d8c1872f90
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|2f5eb540-739b-4127-af8c-a4eb53d3a886
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|92a912ba-c1f7-4777-83f2-0d7557269692
+C:\github\Serial_Controlled_Motor_Driver\Firmware\PSoC Projects\UART_Bringup\UART_Bringup.cydsn\UART_Bringup.cyprj|d55730b7-1c54-4767-9d63-01629903edef
