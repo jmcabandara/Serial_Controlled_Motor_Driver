@@ -23660,7 +23660,7 @@ XRES SRES
 VDDD Vtarget
 VSS Gnd</text>
 <text x="4.064" y="108.458" size="2.54" layer="97" font="vector" ratio="15">Serial Ports</text>
-<text x="75.184" y="179.578" size="2.54" layer="97" font="vector" ratio="15">Power Port</text>
+<text x="70.104" y="180.594" size="2.54" layer="97" font="vector" ratio="15">Power Port</text>
 <text x="120.904" y="179.578" size="2.54" layer="97" font="vector" ratio="15">Programming Header</text>
 <text x="95.504" y="108.458" size="2.54" layer="97" font="vector" ratio="15">H-Bridge Driver</text>
 <text x="5.08" y="169.418" size="2.54" layer="97" font="vector" ratio="15" align="top-left">A driver for controlling 2
@@ -23680,7 +23680,7 @@ VSS Gnd</text>
 <text x="181.356" y="178.054" size="1.778" layer="97" font="vector" align="top-left">The default, all open, is the UART mode.
 A '1' indicated solder bridge.</text>
 <text x="34.29" y="157.226" size="1.778" layer="97" font="vector" align="top-left">Status</text>
-<text x="68.58" y="177.038" size="2.54" layer="97" font="vector" ratio="15" align="top-left">3.3 to 11.0V</text>
+<text x="71.12" y="177.038" size="1.778" layer="97" font="vector" ratio="15">(3.0 to 11.0V)</text>
 </plain>
 <instances>
 <instance part="U1" gate="G1" x="38.1" y="132.08"/>
