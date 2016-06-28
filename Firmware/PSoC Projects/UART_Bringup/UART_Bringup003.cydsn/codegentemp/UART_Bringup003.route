@@ -1,0 +1,46 @@
+net ClockBlock_HFCLK
+	term   ":m0s8clockblockcell.hfclk"
+	switch ":m0s8clockblockcell.hfclk==>:interrupt_11.clock"
+	term   ":interrupt_11.clock"
+end ClockBlock_HFCLK
+net Net_1
+	term   ":m0s8scbcell_1.interrupt"
+	switch ":m0s8scbcell_1.interrupt==>:interrupt_idmux_11.in_0"
+	switch ":interrupt_idmux_11.interrupt_idmux_11__out==>:interrupt_11.interrupt"
+	term   ":interrupt_11.interrupt"
+end Net_1
+net Net_73
+	term   ":m0s8tcpwmcell_0.line_out"
+	switch ":m0s8tcpwmcell_0.line_out==>Stub-:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v24+:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v26"
+	switch "Stub-:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v24+:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v26==>:ioport2:hsiom_out4.fixed_ACT_0"
+	switch ":ioport2:hsiom_out4.hsiom4_out==>:ioport2:pin4.pin_input"
+	term   ":ioport2:pin4.pin_input"
+end Net_73
+net Net_74
+	term   ":m0s8tcpwmcell_1.line_out"
+	switch ":m0s8tcpwmcell_1.line_out==>Stub-:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v25+:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v27"
+	switch "Stub-:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v25+:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v27==>:ioport2:hsiom_out6.fixed_ACT_0"
+	switch ":ioport2:hsiom_out6.hsiom6_out==>:ioport2:pin6.pin_input"
+	term   ":ioport2:pin6.pin_input"
+end Net_74
+net \USER_PORT:Net_896\
+	term   ":ioport0:pin5.fb"
+	switch ":ioport0:pin5.fb==>:ioport0:hsiom_in5.hsiom5_in"
+	switch ":ioport0:hsiom_in5.fixed_DPSLP_3==>:m0s8scbcell_1__miso_m__hsiom_permute.ioport0__fixed_out_p5_DPSLP_3"
+	switch ":m0s8scbcell_1__miso_m__hsiom_permute.m0s8scbcell_1__miso_m==>:m0s8scbcell_1.miso_m"
+	term   ":m0s8scbcell_1.miso_m"
+end \USER_PORT:Net_896\
+net \USER_PORT:Net_903\
+	term   ":ioport0:pin4.fb"
+	switch ":ioport0:pin4.fb==>:ioport0:hsiom_in4.hsiom4_in"
+	switch ":ioport0:hsiom_in4.fixed_DPSLP_3==>:m0s8scbcell_1__mosi_s__hsiom_permute.ioport0__fixed_out_p4_DPSLP_3"
+	switch ":m0s8scbcell_1__mosi_s__hsiom_permute.m0s8scbcell_1__mosi_s==>:m0s8scbcell_1.mosi_s"
+	term   ":m0s8scbcell_1.mosi_s"
+end \USER_PORT:Net_903\
+net \USER_PORT:Net_932\
+	term   ":ioport0:pin6.fb"
+	switch ":ioport0:pin6.fb==>:ioport0:hsiom_in6.hsiom6_in"
+	switch ":ioport0:hsiom_in6.fixed_DPSLP_3==>:m0s8scbcell_1__sclk_s__hsiom_permute.ioport0__fixed_out_p6_DPSLP_3"
+	switch ":m0s8scbcell_1__sclk_s__hsiom_permute.m0s8scbcell_1__sclk_s==>:m0s8scbcell_1.sclk_s"
+	term   ":m0s8scbcell_1.sclk_s"
+end \USER_PORT:Net_932\

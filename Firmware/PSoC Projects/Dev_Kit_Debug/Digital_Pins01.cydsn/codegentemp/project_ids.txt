@@ -1,0 +1,6 @@
+C:\github\Serial_Controlled_Motor_Driver\Firmware\PSoC Projects\Dev_Kit_Debug\Digital_Pins01.cydsn\Digital_Pins01.cyprj|f5146866-bdc5-48f8-a79f-480ffbdd4731
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|26e2d9fa-e58b-4eb4-bb8e-79bb93b8e8df
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|a9e09ee2-32e9-4d9a-8e70-5715b044fcfb
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|946477cf-6b1a-464c-a482-9091732a3d9f
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|23b23850-1b86-4730-a25a-8bc817c2f014
+C:\github\Serial_Controlled_Motor_Driver\Firmware\PSoC Projects\Dev_Kit_Debug\Design02.cydsn\Design02.cyprj|a9391619-7fcd-44dd-ad6e-f25d060fdeca
