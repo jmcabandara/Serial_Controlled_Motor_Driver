@@ -190,19 +190,3 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
-
-#############
-## Cypress Creator
-#############
-
-*.cywrk.*
-*.cyprj.*
-*.cycdx
-*.cyfit
-*.rpt
-*.uvopt
-*.uvproj
-*_timing.html
-*.cydsn/codegentemp
-*.cydsn/DP8051
-*.cydsn/Generated_Source
