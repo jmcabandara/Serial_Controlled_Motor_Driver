@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.248ms
+Loading plugins phase: Elapsed time ==> 0s.243ms
 Initializing data phase: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\github\Serial_Controlled_Motor_Driver\Firmware\PSoC Projects\FirmwareBuild\FW001.cydsn\FW001.cyprj -d CY8C4245LQI-483 -s C:\github\Serial_Controlled_Motor_Driver\Firmware\PSoC Projects\FirmwareBuild\FW001.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 2s.421ms
+Elaboration phase: Elapsed time ==> 2s.676ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.058ms
+HDL generation phase: Elapsed time ==> 0s.072ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\github\Seri
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Thu Jun 23 15:12:00 2016
+Tue Jun 28 15:05:44 2016
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 FW001.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Thu Jun 23 15:12:00 2016
+Tue Jun 28 15:05:44 2016
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
@@ -83,7 +83,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\github\Seri
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Thu Jun 23 15:12:01 2016
+Tue Jun 28 15:05:44 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -110,7 +110,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\github\Seri
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Thu Jun 23 15:12:01 2016
+Tue Jun 28 15:05:44 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -140,9 +140,17 @@ Detecting unused logic.
 	\USER_PORT:Net_754\
 	\USER_PORT:Net_767\
 	\USER_PORT:Net_899\
+	\EXPANSION_PORT:Net_676\
+	\EXPANSION_PORT:Net_245\
+	\EXPANSION_PORT:Net_682\
+	\EXPANSION_PORT:uncfg_rx_irq\
+	\EXPANSION_PORT:Net_754\
+	\EXPANSION_PORT:Net_767\
+	\EXPANSION_PORT:Net_891\
+	\EXPANSION_PORT:Net_899\
 
 
-Deleted 8 User equations/components.
+Deleted 16 User equations/components.
 Deleted 0 Synthesized equations/components.
 
 ------------------------------------------------------
@@ -172,6 +180,12 @@ Aliasing \PWM_2:Net_72\ to zero
 Aliasing tmpOE__P2_5_A_EN_net_0 to \USER_PORT:tmpOE__spi_sclk_net_0\
 Aliasing tmpOE__P2_7_B_EN_net_0 to \USER_PORT:tmpOE__spi_sclk_net_0\
 Aliasing tmpOE__P2_3_MODE_net_0 to \USER_PORT:tmpOE__spi_sclk_net_0\
+Aliasing \EXPANSION_PORT:tmpOE__spi_mosi_i2c_scl_uart_rx_net_0\ to \USER_PORT:tmpOE__spi_sclk_net_0\
+Aliasing \EXPANSION_PORT:tmpOE__spi_miso_i2c_sda_uart_tx_net_0\ to \USER_PORT:tmpOE__spi_sclk_net_0\
+Aliasing \EXPANSION_PORT:Net_459\ to zero
+Aliasing \EXPANSION_PORT:Net_452\ to zero
+Aliasing \EXPANSION_PORT:Net_416\ to zero
+Aliasing \EXPANSION_PORT:Net_747\ to zero
 Removing Rhs of wire one[6] = \USER_PORT:tmpOE__spi_sclk_net_0\[1]
 Removing Lhs of wire \USER_PORT:tmpOE__spi_mosi_i2c_scl_uart_rx_net_0\[9] = one[6]
 Removing Lhs of wire \USER_PORT:tmpOE__spi_miso_i2c_sda_uart_tx_net_0\[15] = one[6]
@@ -207,9 +221,24 @@ Removing Lhs of wire \PWM_2:Net_72\[107] = zero[2]
 Removing Lhs of wire tmpOE__P2_5_A_EN_net_0[115] = one[6]
 Removing Lhs of wire tmpOE__P2_7_B_EN_net_0[121] = one[6]
 Removing Lhs of wire tmpOE__P2_3_MODE_net_0[127] = one[6]
+Removing Lhs of wire \EXPANSION_PORT:tmpOE__spi_mosi_i2c_scl_uart_rx_net_0\[133] = one[6]
+Removing Lhs of wire \EXPANSION_PORT:tmpOE__spi_miso_i2c_sda_uart_tx_net_0\[139] = one[6]
+Removing Lhs of wire \EXPANSION_PORT:Net_459\[144] = zero[2]
+Removing Lhs of wire \EXPANSION_PORT:Net_652\[145] = zero[2]
+Removing Lhs of wire \EXPANSION_PORT:Net_452\[146] = zero[2]
+Removing Lhs of wire \EXPANSION_PORT:Net_416\[149] = zero[2]
+Removing Lhs of wire \EXPANSION_PORT:Net_654\[150] = zero[2]
+Removing Lhs of wire \EXPANSION_PORT:SCBclock\[153] = Net_299[154]
+Removing Lhs of wire \EXPANSION_PORT:Net_653\[155] = zero[2]
+Removing Rhs of wire \EXPANSION_PORT:Net_909\[156] = \EXPANSION_PORT:Net_474\[157]
+Removing Lhs of wire \EXPANSION_PORT:Net_909\[156] = \EXPANSION_PORT:Net_903\[134]
+Removing Rhs of wire \EXPANSION_PORT:Net_663\[158] = \EXPANSION_PORT:Net_547\[159]
+Removing Lhs of wire \EXPANSION_PORT:Net_663\[158] = \EXPANSION_PORT:Net_896\[140]
+Removing Lhs of wire \EXPANSION_PORT:Net_739\[165] = zero[2]
+Removing Lhs of wire \EXPANSION_PORT:Net_747\[166] = zero[2]
 
 ------------------------------------------------------
-Aliased 0 equations, 35 wires.
+Aliased 0 equations, 50 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -233,14 +262,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\bin/warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\github\Serial_Controlled_Motor_Driver\Firmware\PSoC Projects\FirmwareBuild\FW001.cydsn\FW001.cyprj" -dcpsoc3 FW001.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.431ms
+Warp synthesis phase: Elapsed time ==> 0s.445ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V3.3.0.9604, Family: PSoC3, Started at: Thursday, 23 June 2016 15:12:01
+cyp3fit: V3.3.0.9604, Family: PSoC3, Started at: Tuesday, 28 June 2016 15:05:44
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\github\Serial_Controlled_Motor_Driver\Firmware\PSoC Projects\FirmwareBuild\FW001.cydsn\FW001.cyprj -d CY8C4245LQI-483 FW001.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.012ms
+Design parsing phase: Elapsed time ==> 0s.019ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -251,9 +280,12 @@ Done removing unused cells.
     Fixed Function Clock 8: Automatic-assigning  clock 'Clock_1'. Signal=Net_110_ff8
     Fixed Function Clock 9: Automatic-assigning  clock 'Clock_1'. Signal=Net_110_ff9
     Fixed Function Clock 2: Automatic-assigning  clock 'SCBCLK'. Signal=Net_2_ff2
+    Fixed Function Clock 3: Automatic-assigning  clock 'EXPANSION_SCBCLK'. Signal=Net_299_ff3
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
 </CYPRESSTAG>
+ADD: pft.M0040: information: The following 2 pin(s) will be assigned a location by the fitter: \EXPANSION_PORT:spi_miso_i2c_sda_uart_tx(0)\, \EXPANSION_PORT:spi_mosi_i2c_scl_uart_rx(0)\
+
 
 Removing unused cells resulting from optimization
 Done removing unused cells.
@@ -668,6 +700,80 @@ Design Equations
         Properties:
         {
         }
+
+    Pin : Name = \EXPANSION_PORT:spi_mosi_i2c_scl_uart_rx(0)\
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => \EXPANSION_PORT:spi_mosi_i2c_scl_uart_rx(0)\__PA ,
+            fb => \EXPANSION_PORT:Net_903\ ,
+            pad => \EXPANSION_PORT:spi_mosi_i2c_scl_uart_rx(0)_PAD\ );
+
+    Pin : Name = \EXPANSION_PORT:spi_miso_i2c_sda_uart_tx(0)\
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_DIGITAL
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => \EXPANSION_PORT:spi_miso_i2c_sda_uart_tx(0)\__PA ,
+            fb => \EXPANSION_PORT:Net_896\ ,
+            pad => \EXPANSION_PORT:spi_miso_i2c_sda_uart_tx(0)_PAD\ );
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
     </CYPRESSTAG>
@@ -698,6 +804,14 @@ Design Equations
         {
             int_type = "10"
         }
+
+    interrupt: Name =\EXPANSION_PORT:SCB_IRQ\
+        PORT MAP (
+            interrupt => Net_304 );
+        Properties:
+        {
+            int_type = "10"
+        }
     </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Technology mapping summary" expanded>
@@ -709,12 +823,12 @@ Technology mapping summary
 Resource Type                 : Used : Free :  Max :  % Used
 ============================================================
 Digital Clocks                :    0 :    4 :    4 :  0.00 %
-Interrupts                    :    1 :   31 :   32 :  3.13 %
-IO                            :   12 :   22 :   34 : 35.29 %
+Interrupts                    :    2 :   30 :   32 :  6.25 %
+IO                            :   14 :   20 :   34 : 41.18 %
 Segment LCD                   :    0 :    1 :    1 :  0.00 %
 CapSense                      :    0 :    1 :    1 :  0.00 %
 Die Temp                      :    0 :    1 :    1 :  0.00 %
-Serial Communication (SCB)    :    1 :    1 :    2 : 50.00 %
+Serial Communication (SCB)    :    2 :    0 :    2 : 100.00 %
 Timer/Counter/PWM             :    2 :    2 :    4 : 50.00 %
 UDB                           :      :      :      :        
   Macrocells                  :    0 :   32 :   32 :  0.00 %
@@ -730,18 +844,18 @@ DAC                           :      :      :      :
   7-bit IDAC                  :    0 :    1 :    1 :  0.00 %
   8-bit IDAC                  :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.012ms
-Tech mapping phase: Elapsed time ==> 0s.058ms
+Technology Mapping: Elapsed time ==> 0s.013ms
+Tech mapping phase: Elapsed time ==> 0s.051ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="Analog Placement">
-Elapsed time ==> 0.1805035s
+Elapsed time ==> 0.1691764s
 </CYPRESSTAG>
 Analog Placement phase: Elapsed time ==> 0s.368ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0011415 secs
+Route success=True, Iterations=1 Elapsed=0.0011247 secs
 </CYPRESSTAG>
 Analog Routing phase: Elapsed time ==> 0s.002ms
 </CYPRESSTAG>
@@ -759,27 +873,27 @@ Analog Code Generation phase: Elapsed time ==> 0s.018ms
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.3 sec.
+I2076: Total run-time: 0.2 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
 <CYPRESSTAG name="PLD Packing Summary">
 No PLDs were packed.
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.001ms
+PLD Packing: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.016ms
+Partitioning: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Simulated Annealing">
-Annealing: Elapsed time ==> 0s.001ms
+Annealing: Elapsed time ==> 0s.002ms
 <CYPRESSTAG name="Simulated Annealing Results">
 The seed used for moves was 114161200.
-Inital cost was 29, final cost is 29 (0.00% improvement).</CYPRESSTAG>
+Inital cost was 37, final cost is 37 (0.00% improvement).</CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -801,6 +915,14 @@ UDB [UDB=(0,1)] is empty.
 UDB [UDB=(1,0)] is empty.
 UDB [UDB=(1,1)] is empty.
 Intr container @ [IntrContainer=(0)]: 
+  Intr@ [IntrContainer=(0)][IntrId=(10)] 
+    interrupt: Name =\EXPANSION_PORT:SCB_IRQ\
+        PORT MAP (
+            interrupt => Net_304 );
+        Properties:
+        {
+            int_type = "10"
+        }
   Intr@ [IntrContainer=(0)][IntrId=(11)] 
     interrupt: Name =\USER_PORT:SCB_IRQ\
         PORT MAP (
@@ -1219,7 +1341,89 @@ Pin : Name = P2_7_B_EN(0)
     }
 
 Port 3 is empty
-Port 4 is empty
+Port 4 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = \EXPANSION_PORT:spi_mosi_i2c_scl_uart_rx(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \EXPANSION_PORT:spi_mosi_i2c_scl_uart_rx(0)\__PA ,
+        fb => \EXPANSION_PORT:Net_903\ ,
+        pad => \EXPANSION_PORT:spi_mosi_i2c_scl_uart_rx(0)_PAD\ );
+    Properties:
+    {
+    }
+
+[IoId=1]: 
+Pin : Name = \EXPANSION_PORT:spi_miso_i2c_sda_uart_tx(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_DIGITAL
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \EXPANSION_PORT:spi_miso_i2c_sda_uart_tx(0)\__PA ,
+        fb => \EXPANSION_PORT:Net_896\ ,
+        pad => \EXPANSION_PORT:spi_miso_i2c_sda_uart_tx(0)_PAD\ );
+    Properties:
+    {
+    }
+
 Clock group 0: 
     M0S8 Clock Block @ F(Clock,0): 
     m0s8clockblockcell: Name =ClockBlock
@@ -1233,7 +1437,8 @@ Clock group 0:
             dsi_in_0 => ClockBlock_Routed1 ,
             ff_div_8 => Net_110_ff8 ,
             ff_div_9 => Net_110_ff9 ,
-            ff_div_2 => Net_2_ff2 );
+            ff_div_2 => Net_2_ff2 ,
+            ff_div_3 => Net_299_ff3 );
         Properties:
         {
         }
@@ -1243,6 +1448,29 @@ WDT group 0: empty
 FSS group 0: empty
 LP Comparator group 0: empty
 Serial Communication (SCB) group 0: 
+    SCB Block @ F(SCB,0): 
+    m0s8scbcell: Name =\EXPANSION_PORT:SCB\
+        PORT MAP (
+            clock => Net_299_ff3 ,
+            interrupt => Net_304 ,
+            tx => \EXPANSION_PORT:Net_656\ ,
+            rts => \EXPANSION_PORT:Net_751\ ,
+            mosi_m => \EXPANSION_PORT:Net_660\ ,
+            miso_m => \EXPANSION_PORT:Net_896\ ,
+            select_m_3 => \EXPANSION_PORT:ss_3\ ,
+            select_m_2 => \EXPANSION_PORT:ss_2\ ,
+            select_m_1 => \EXPANSION_PORT:ss_1\ ,
+            select_m_0 => \EXPANSION_PORT:ss_0\ ,
+            sclk_m => \EXPANSION_PORT:Net_687\ ,
+            mosi_s => \EXPANSION_PORT:Net_903\ ,
+            miso_s => \EXPANSION_PORT:Net_703\ ,
+            tx_req => \EXPANSION_PORT:Net_823\ ,
+            rx_req => \EXPANSION_PORT:Net_824\ );
+        Properties:
+        {
+            cy_registers = ""
+            scb_mode = 1
+        }
     SCB Block @ F(SCB,1): 
     m0s8scbcell: Name =\USER_PORT:SCB\
         PORT MAP (
@@ -1331,50 +1559,53 @@ WCO group 0: empty
 ------------------------------------------------------------
 Port Configuration report
 ------------------------------------------------------------
-     |     |       | Interrupt |                  |                                         | 
-Port | Pin | Fixed |      Type |       Drive Mode |                                    Name | Connections
------+-----+-------+-----------+------------------+-----------------------------------------+------------------------
-   0 |   4 |     * |      NONE |     HI_Z_DIGITAL | \USER_PORT:spi_mosi_i2c_scl_uart_rx(0)\ | FB(\USER_PORT:Net_903\)
-     |   5 |     * |      NONE |     HI_Z_DIGITAL | \USER_PORT:spi_miso_i2c_sda_uart_tx(0)\ | FB(\USER_PORT:Net_896\)
-     |   6 |     * |      NONE |     HI_Z_DIGITAL |                 \USER_PORT:spi_sclk(0)\ | FB(\USER_PORT:Net_932\)
-     |   7 |     * |      NONE |     HI_Z_DIGITAL |                  \USER_PORT:spi_ss0(0)\ | In(\USER_PORT:ss_0\)
------+-----+-------+-----------+------------------+-----------------------------------------+------------------------
-   2 |   0 |     * |      NONE |         CMOS_OUT |                                LED_R(0) | 
-     |   3 |     * |      NONE |         CMOS_OUT |                            P2_3_MODE(0) | 
-     |   4 |     * |      NONE |         CMOS_OUT |                            P2_4_A_PH(0) | In(Net_73)
-     |   5 |     * |      NONE |         CMOS_OUT |                            P2_5_A_EN(0) | 
-     |   6 |     * |      NONE |         CMOS_OUT |                            P2_6_B_PH(0) | In(Net_74)
-     |   7 |     * |      NONE |         CMOS_OUT |                            P2_7_B_EN(0) | 
----------------------------------------------------------------------------------------------------------------------
+     |     |       | Interrupt |                  |                                              | 
+Port | Pin | Fixed |      Type |       Drive Mode |                                         Name | Connections
+-----+-----+-------+-----------+------------------+----------------------------------------------+-----------------------------
+   0 |   4 |     * |      NONE |     HI_Z_DIGITAL |      \USER_PORT:spi_mosi_i2c_scl_uart_rx(0)\ | FB(\USER_PORT:Net_903\)
+     |   5 |     * |      NONE |     HI_Z_DIGITAL |      \USER_PORT:spi_miso_i2c_sda_uart_tx(0)\ | FB(\USER_PORT:Net_896\)
+     |   6 |     * |      NONE |     HI_Z_DIGITAL |                      \USER_PORT:spi_sclk(0)\ | FB(\USER_PORT:Net_932\)
+     |   7 |     * |      NONE |     HI_Z_DIGITAL |                       \USER_PORT:spi_ss0(0)\ | In(\USER_PORT:ss_0\)
+-----+-----+-------+-----------+------------------+----------------------------------------------+-----------------------------
+   2 |   0 |     * |      NONE |         CMOS_OUT |                                     LED_R(0) | 
+     |   3 |     * |      NONE |         CMOS_OUT |                                 P2_3_MODE(0) | 
+     |   4 |     * |      NONE |         CMOS_OUT |                                 P2_4_A_PH(0) | In(Net_73)
+     |   5 |     * |      NONE |         CMOS_OUT |                                 P2_5_A_EN(0) | 
+     |   6 |     * |      NONE |         CMOS_OUT |                                 P2_6_B_PH(0) | In(Net_74)
+     |   7 |     * |      NONE |         CMOS_OUT |                                 P2_7_B_EN(0) | 
+-----+-----+-------+-----------+------------------+----------------------------------------------+-----------------------------
+   4 |   0 |       |      NONE |     HI_Z_DIGITAL | \EXPANSION_PORT:spi_mosi_i2c_scl_uart_rx(0)\ | FB(\EXPANSION_PORT:Net_903\)
+     |   1 |       |      NONE |     HI_Z_DIGITAL | \EXPANSION_PORT:spi_miso_i2c_sda_uart_tx(0)\ | FB(\EXPANSION_PORT:Net_896\)
+-------------------------------------------------------------------------------------------------------------------------------
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.001ms
-Digital Placement phase: Elapsed time ==> 0s.489ms
+Digital component placer commit/Report: Elapsed time ==> 0s.002ms
+Digital Placement phase: Elapsed time ==> 0s.459ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.785ms
+Digital Routing phase: Elapsed time ==> 0s.786ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
-Bitstream and API generation phase: Elapsed time ==> 0s.209ms
+Bitstream and API generation phase: Elapsed time ==> 0s.204ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
-Bitstream verification phase: Elapsed time ==> 0s.028ms
+Bitstream verification phase: Elapsed time ==> 0s.026ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in FW001_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.165ms
+Static timing analysis phase: Elapsed time ==> 0s.262ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.182ms
+Design database save phase: Elapsed time ==> 0s.192ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 2s.337ms
+cydsfit: Elapsed time ==> 2s.405ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 2s.388ms
-API generation phase: Elapsed time ==> 1s.428ms
-Dependency generation phase: Elapsed time ==> 0s.014ms
+Fitter phase: Elapsed time ==> 2s.445ms
+API generation phase: Elapsed time ==> 1s.889ms
+Dependency generation phase: Elapsed time ==> 0s.017ms
 Cleanup phase: Elapsed time ==> 0s.001ms

@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="FW001-000.cywrk\FW001\FW001.cydwr">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="FW001-000.cywrk\FW001\TopDesign">
 <ExpandedNodeIds>
 <v>FW001-000.cywrk</v>
 <v>FW001-000.cywrk\FW001</v>
@@ -50,6 +50,48 @@
 <v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\cy_boot\cyPm.h</v>
 <v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\cy_boot\cytypes.h</v>
 <v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\cy_boot\cyutils.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_BOOT.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_BOOT.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_EZI2C.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_EZI2C.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_EZI2C_BOOT.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_EZI2C_INT.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_EZI2C_PVT.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_I2C.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_I2C.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_I2C_BOOT.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_I2C_INT.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_I2C_MASTER.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_I2C_PVT.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_I2C_SLAVE.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_PINS.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_PM.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_PVT.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_SPI.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_SPI_BOOT.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_SPI_UART.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_SPI_UART.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_SPI_UART_INT.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_SPI_UART_PVT.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_UART.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT\EXPANSION_PORT_UART_BOOT.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT_SCB_IRQ</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT_SCB_IRQ\EXPANSION_PORT_SCB_IRQ.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT_SCB_IRQ\EXPANSION_PORT_SCB_IRQ.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT_spi_miso_i2c_sda_uart_tx</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT_spi_miso_i2c_sda_uart_tx\EXPANSION_PORT_spi_miso_i2c_sda_uart_tx.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT_spi_miso_i2c_sda_uart_tx\EXPANSION_PORT_spi_miso_i2c_sda_uart_tx.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT_spi_miso_i2c_sda_uart_tx\EXPANSION_PORT_spi_miso_i2c_sda_uart_tx_aliases.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT_spi_mosi_i2c_scl_uart_rx</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT_spi_mosi_i2c_scl_uart_rx\EXPANSION_PORT_spi_mosi_i2c_scl_uart_rx.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT_spi_mosi_i2c_scl_uart_rx\EXPANSION_PORT_spi_mosi_i2c_scl_uart_rx.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_PORT_spi_mosi_i2c_scl_uart_rx\EXPANSION_PORT_spi_mosi_i2c_scl_uart_rx_aliases.h</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_SCBCLK</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_SCBCLK\EXPANSION_SCBCLK.c</v>
+<v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\EXPANSION_SCBCLK\EXPANSION_SCBCLK.h</v>
 <v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\LED_R</v>
 <v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\LED_R\LED_R.c</v>
 <v>FW001-000.cywrk\FW001\Generated_Source\PSoC4\LED_R\LED_R.h</v>
@@ -179,6 +221,27 @@
 <v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
 <v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
 <v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\devRegisters.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_BOOT.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_EZI2C.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_EZI2C_BOOT.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_EZI2C_INT.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_I2C.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_I2C_BOOT.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_I2C_INT.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_I2C_MASTER.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_I2C_SLAVE.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_PM.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_SCB_IRQ.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_SPI.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_SPI_BOOT.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_spi_miso_i2c_sda_uart_tx.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_spi_mosi_i2c_scl_uart_rx.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_SPI_UART.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_SPI_UART_INT.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_UART.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_PORT_UART_BOOT.lst</v>
+<v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\EXPANSION_SCBCLK.lst</v>
 <v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\LED_R.lst</v>
 <v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\main.lst</v>
 <v>FW001-000.cywrk\FW001\CortexM0\ARM_GCC_493\Debug\Listing Files\P2_3_MODE.lst</v>
@@ -239,7 +302,8 @@
 <v>FW001-000.cywrk\FW001\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>FW001-000.cywrk\FW001\cy_pins_v2_10</v>
 <v>FW001-000.cywrk\FW001\cy_pins_v2_10\cy_pins_v2_10.pdf</v>
-<v>FW001-000.cywrk\FW001\SCB_P4_v2_0.pdf</v>
+<v>FW001-000.cywrk\FW001\SCB_P4_v2_0</v>
+<v>FW001-000.cywrk\FW001\SCB_P4_v2_0\SCB_P4_v2_0.pdf</v>
 <v>FW001-000.cywrk\FW001\TCPWM_P4_v2_0</v>
 <v>FW001-000.cywrk\FW001\TCPWM_P4_v2_0\TCPWM_P4_v2_0.pdf</v>
 </ExpandedNodeIds>

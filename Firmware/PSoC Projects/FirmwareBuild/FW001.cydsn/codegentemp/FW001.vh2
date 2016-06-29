@@ -2,7 +2,7 @@
 --	Conversion of FW001.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Jun 23 15:12:01 2016
+--	Tue Jun 28 15:05:44 2016
 --
 
 USE cypress.cypress.all;
@@ -128,6 +128,56 @@ SIGNAL tmpFB_0__P2_3_MODE_net_0 : bit;
 SIGNAL tmpIO_0__P2_3_MODE_net_0 : bit;
 TERMINAL tmpSIOVREF__P2_3_MODE_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__P2_3_MODE_net_0 : bit;
+SIGNAL \EXPANSION_PORT:tmpOE__spi_mosi_i2c_scl_uart_rx_net_0\ : bit;
+SIGNAL \EXPANSION_PORT:Net_903\ : bit;
+SIGNAL \EXPANSION_PORT:tmpIO_0__spi_mosi_i2c_scl_uart_rx_net_0\ : bit;
+TERMINAL \EXPANSION_PORT:tmpSIOVREF__spi_mosi_i2c_scl_uart_rx_net_0\ : bit;
+SIGNAL \EXPANSION_PORT:tmpINTERRUPT_0__spi_mosi_i2c_scl_uart_rx_net_0\ : bit;
+SIGNAL \EXPANSION_PORT:tmpOE__spi_miso_i2c_sda_uart_tx_net_0\ : bit;
+SIGNAL \EXPANSION_PORT:Net_896\ : bit;
+SIGNAL \EXPANSION_PORT:tmpIO_0__spi_miso_i2c_sda_uart_tx_net_0\ : bit;
+TERMINAL \EXPANSION_PORT:tmpSIOVREF__spi_miso_i2c_sda_uart_tx_net_0\ : bit;
+SIGNAL \EXPANSION_PORT:tmpINTERRUPT_0__spi_miso_i2c_sda_uart_tx_net_0\ : bit;
+SIGNAL \EXPANSION_PORT:Net_459\ : bit;
+SIGNAL \EXPANSION_PORT:Net_652\ : bit;
+SIGNAL \EXPANSION_PORT:Net_452\ : bit;
+SIGNAL \EXPANSION_PORT:Net_676\ : bit;
+SIGNAL \EXPANSION_PORT:Net_245\ : bit;
+SIGNAL \EXPANSION_PORT:Net_416\ : bit;
+SIGNAL \EXPANSION_PORT:Net_654\ : bit;
+SIGNAL \EXPANSION_PORT:Net_682\ : bit;
+SIGNAL \EXPANSION_PORT:uncfg_rx_irq\ : bit;
+SIGNAL \EXPANSION_PORT:SCBclock\ : bit;
+SIGNAL Net_299 : bit;
+SIGNAL \EXPANSION_PORT:Net_653\ : bit;
+SIGNAL \EXPANSION_PORT:Net_909\ : bit;
+SIGNAL \EXPANSION_PORT:Net_474\ : bit;
+SIGNAL \EXPANSION_PORT:Net_663\ : bit;
+SIGNAL \EXPANSION_PORT:Net_547\ : bit;
+SIGNAL \EXPANSION_PORT:Net_754\ : bit;
+SIGNAL \EXPANSION_PORT:Net_767\ : bit;
+SIGNAL \EXPANSION_PORT:Net_847\ : bit;
+SIGNAL Net_304 : bit;
+SIGNAL \EXPANSION_PORT:Net_739\ : bit;
+SIGNAL \EXPANSION_PORT:Net_747\ : bit;
+SIGNAL \EXPANSION_PORT:Net_656\ : bit;
+SIGNAL \EXPANSION_PORT:Net_751\ : bit;
+SIGNAL \EXPANSION_PORT:Net_660\ : bit;
+SIGNAL \EXPANSION_PORT:ss_3\ : bit;
+SIGNAL \EXPANSION_PORT:ss_2\ : bit;
+SIGNAL \EXPANSION_PORT:ss_1\ : bit;
+SIGNAL \EXPANSION_PORT:ss_0\ : bit;
+SIGNAL \EXPANSION_PORT:Net_687\ : bit;
+SIGNAL \EXPANSION_PORT:Net_703\ : bit;
+SIGNAL \EXPANSION_PORT:Net_580\ : bit;
+SIGNAL \EXPANSION_PORT:Net_581\ : bit;
+SIGNAL \EXPANSION_PORT:Net_823\ : bit;
+SIGNAL \EXPANSION_PORT:Net_824\ : bit;
+SIGNAL \EXPANSION_PORT:Net_891\ : bit;
+SIGNAL \EXPANSION_PORT:Net_932\ : bit;
+SIGNAL \EXPANSION_PORT:Net_899\ : bit;
+SIGNAL \EXPANSION_PORT:Net_915\ : bit;
+SIGNAL \EXPANSION_PORT:Net_927\ : bit;
 BEGIN
 
 zero <=  ('0') ;
@@ -906,5 +956,179 @@ P2_3_MODE:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__P2_3_MODE_net_0);
+\EXPANSION_PORT:spi_mosi_i2c_scl_uart_rx\:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"be036af4-f8b4-4bf1-b65a-83326245d233/546f1f28-3a33-4888-bf93-14a95800f230",
+		drive_mode=>"001",
+		ibuf_enabled=>"0",
+		init_dr_st=>"0",
+		input_sync=>"0",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"0",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"I",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"00",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>\EXPANSION_PORT:Net_903\,
+		analog=>(open),
+		io=>(\EXPANSION_PORT:tmpIO_0__spi_mosi_i2c_scl_uart_rx_net_0\),
+		siovref=>(\EXPANSION_PORT:tmpSIOVREF__spi_mosi_i2c_scl_uart_rx_net_0\),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>one,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>one,
+		out_reset=>zero,
+		interrupt=>\EXPANSION_PORT:tmpINTERRUPT_0__spi_mosi_i2c_scl_uart_rx_net_0\);
+\EXPANSION_PORT:spi_miso_i2c_sda_uart_tx\:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"be036af4-f8b4-4bf1-b65a-83326245d233/e4eef7cc-20a7-45a2-a6af-d619f5982693",
+		drive_mode=>"001",
+		ibuf_enabled=>"0",
+		init_dr_st=>"0",
+		input_sync=>"0",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"0",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"I",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"00",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>\EXPANSION_PORT:Net_896\,
+		analog=>(open),
+		io=>(\EXPANSION_PORT:tmpIO_0__spi_miso_i2c_sda_uart_tx_net_0\),
+		siovref=>(\EXPANSION_PORT:tmpSIOVREF__spi_miso_i2c_sda_uart_tx_net_0\),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>one,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>one,
+		out_reset=>zero,
+		interrupt=>\EXPANSION_PORT:tmpINTERRUPT_0__spi_miso_i2c_sda_uart_tx_net_0\);
+\EXPANSION_PORT:SCB_IRQ\:cy_isr_v1_0
+	GENERIC MAP(int_type=>"10")
+	PORT MAP(int_signal=>Net_304);
+\EXPANSION_PORT:SCB\:cy_m0s8_scb_v2_0
+	GENERIC MAP(cy_registers=>"",
+		scb_mode=>1)
+	PORT MAP(clock=>Net_299,
+		interrupt=>Net_304,
+		rx=>zero,
+		tx=>\EXPANSION_PORT:Net_656\,
+		cts=>zero,
+		rts=>\EXPANSION_PORT:Net_751\,
+		mosi_m=>\EXPANSION_PORT:Net_660\,
+		miso_m=>\EXPANSION_PORT:Net_896\,
+		select_m=>(\EXPANSION_PORT:ss_3\, \EXPANSION_PORT:ss_2\, \EXPANSION_PORT:ss_1\, \EXPANSION_PORT:ss_0\),
+		sclk_m=>\EXPANSION_PORT:Net_687\,
+		mosi_s=>\EXPANSION_PORT:Net_903\,
+		miso_s=>\EXPANSION_PORT:Net_703\,
+		select_s=>zero,
+		sclk_s=>zero,
+		scl=>\EXPANSION_PORT:Net_580\,
+		sda=>\EXPANSION_PORT:Net_581\,
+		tx_req=>\EXPANSION_PORT:Net_823\,
+		rx_req=>\EXPANSION_PORT:Net_824\);
+EXPANSION_SCBCLK:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"f8e1c2d4-8c37-4937-9b5e-0931ba516c08",
+		source_clock_id=>"",
+		divisor=>0,
+		period=>"83333333.3333333",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>Net_299,
+		dig_domain_out=>open);
 
 END R_T_L;

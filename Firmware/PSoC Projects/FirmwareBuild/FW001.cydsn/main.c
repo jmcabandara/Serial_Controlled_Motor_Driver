@@ -14,7 +14,7 @@
 
 uint8_t debugLED = 0;
 
-volatile uint8_t CONFIG_BITS = 0x03;
+volatile uint8_t CONFIG_BITS = 0x13;
     //0 -- UART
     //1 -- SPI
     //2 -- I2C slave on slave port
@@ -118,6 +118,27 @@ const USER_PORT_SPI_INIT_STRUCT configSPI =
     
 };
 
+/* Buffers for expansion port */
+uint8 expansionBufferRx[USER_PORT_BUFFER_SIZE + 1u];/* RX software buffer requires one extra entry for correct operation in UART mode */
+uint8 expansionBufferTx[USER_PORT_BUFFER_SIZE]; /* TX software buffer */
+
+const EXPANSION_PORT_I2C_INIT_STRUCT expansionConfigI2C =
+{
+    USER_PORT_I2C_MODE_SLAVE, /* mode: slave */
+    0u, /* oversampleLow: N/A for slave, SCBCLK determines maximum data rate*/
+    0u, /* oversampleHigh: N/A for slave, SCBCLK determines maximum data rate*/
+    0u, /* enableMedianFilter: N/A since SCB v2.0 */
+    0x58u, /* slaveAddr: slave address */
+    //0x2Cu,
+    0xFEu, /* slaveAddrMask: signle slave address */
+    0u, /* acceptAddr: disable */
+    0u, /* enableWake: disable */
+    0u, /* enableByteMode: disable */
+    100u /* dataRate: 100 kbps */
+};
+
+
+
 /* The clock divider value written into the register has to be one less from calculated */
 #define SCBCLK_I2C_DIVIDER (14u) /* I2C Slave: 100 kbps Required SCBCLK = 1.6 MHz, Div = 15 */
 #define SCBCLK_UART_DIVIDER (12u) /* UART: 115200 kbps with OVS = 16. Required SCBCLK = 1.846 MHz, Div = 13 */
@@ -178,6 +199,22 @@ cystatus SetScbConfiguration(uint32 opMode)
     return (status);
 }
 
+cystatus SetExpansionScbConfiguration(void)
+{
+    cystatus status = CYRET_SUCCESS;
+    USER_PORT_Stop(); /* Disable component before configuration change */
+    /* Change clock divider */
+    EXPANSION_SCBCLK_Stop();
+    EXPANSION_SCBCLK_SetFractionalDividerRegister(SCBCLK_I2C_DIVIDER, 0u);
+    EXPANSION_SCBCLK_Start();
+    /* Configure to I2C slave operation */
+    EXPANSION_PORT_I2CSlaveInitReadBuf (expansionBufferTx, USER_PORT_BUFFER_SIZE);
+    EXPANSION_PORT_I2CSlaveInitWriteBuf(expansionBufferRx, USER_PORT_BUFFER_SIZE);
+    EXPANSION_PORT_I2CInit(&expansionConfigI2C);
+    EXPANSION_PORT_Start(); /* Enable component after configuration change */
+    return (status);
+}
+
 int main()
 {
    
@@ -225,7 +262,8 @@ int main()
     }
     
     Clock_1_Start();
-    
+    SetExpansionScbConfiguration();
+        
     CyGlobalIntEnable; 
 
 //    isr_1_Start();      /* Initializing the ISR */
@@ -368,6 +406,43 @@ int main()
                 (void) USER_PORT_I2CSlaveClearReadStatus();
             }
         }
+        
+        //Do slave
+        {
+            /* Write complete: parse command packet */
+            if (0u != (EXPANSION_PORT_I2CSlaveStatus() & EXPANSION_PORT_I2C_SSTAT_WR_CMPLT))
+            {
+                /* Check packet length */
+                if (EXPANSION_PORT_I2CSlaveGetWriteBufSize() == 2)
+                {
+                    //we have a address and data to write
+                    addressPointer = expansionBufferRx[0];
+                    writeDevRegister(addressPointer, expansionBufferRx[1]);
+                }
+                if (EXPANSION_PORT_I2CSlaveGetWriteBufSize() == 1)
+                {
+                    //we have a address only, expose
+                    //for now, limit address
+                    addressPointer = expansionBufferRx[0];
+                }
+            EXPANSION_PORT_I2CSlaveClearWriteStatus();
+            EXPANSION_PORT_I2CSlaveClearWriteBuf();
+                
+            }
+            //always expose buffer?
+            /*expose buffer to master */
+            expansionBufferTx[0] = readDevRegister(addressPointer);
+    
+            if (0u != (EXPANSION_PORT_I2CSlaveStatus() & EXPANSION_PORT_I2C_SSTAT_RD_CMPLT))
+            {
+                LED_R_Write(LED_R_Read()^0x01);
+                /* Clear slave read buffer and status */
+                EXPANSION_PORT_I2CSlaveClearReadBuf();
+                (void) EXPANSION_PORT_I2CSlaveClearReadStatus();
+            }
+
+        }
+        
         
         //Set outputs
         

@@ -2,6 +2,8 @@ net ClockBlock_HFCLK
 	term   ":m0s8clockblockcell.hfclk"
 	switch ":m0s8clockblockcell.hfclk==>:interrupt_11.clock"
 	term   ":interrupt_11.clock"
+	switch ":m0s8clockblockcell.hfclk==>:interrupt_10.clock"
+	term   ":interrupt_10.clock"
 end ClockBlock_HFCLK
 net Net_1
 	term   ":m0s8scbcell_1.interrupt"
@@ -9,6 +11,12 @@ net Net_1
 	switch ":interrupt_idmux_11.interrupt_idmux_11__out==>:interrupt_11.interrupt"
 	term   ":interrupt_11.interrupt"
 end Net_1
+net Net_304
+	term   ":m0s8scbcell_0.interrupt"
+	switch ":m0s8scbcell_0.interrupt==>:interrupt_idmux_10.in_0"
+	switch ":interrupt_idmux_10.interrupt_idmux_10__out==>:interrupt_10.interrupt"
+	term   ":interrupt_10.interrupt"
+end Net_304
 net Net_73
 	term   ":m0s8tcpwmcell_0.line_out"
 	switch ":m0s8tcpwmcell_0.line_out==>Stub-:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v24+:dsiswitch_top@[DSI=(0,0)][side=top]:dsihc_top:v26"
@@ -23,6 +31,20 @@ net Net_74
 	switch ":ioport2:hsiom_out6.hsiom6_out==>:ioport2:pin6.pin_input"
 	term   ":ioport2:pin6.pin_input"
 end Net_74
+net \EXPANSION_PORT:Net_896\
+	term   ":ioport4:pin1.fb"
+	switch ":ioport4:pin1.fb==>:ioport4:hsiom_in1.hsiom1_in"
+	switch ":ioport4:hsiom_in1.fixed_DPSLP_3==>:m0s8scbcell_0__miso_m__hsiom_permute.ioport4__fixed_out_p1_DPSLP_3"
+	switch ":m0s8scbcell_0__miso_m__hsiom_permute.m0s8scbcell_0__miso_m==>:m0s8scbcell_0.miso_m"
+	term   ":m0s8scbcell_0.miso_m"
+end \EXPANSION_PORT:Net_896\
+net \EXPANSION_PORT:Net_903\
+	term   ":ioport4:pin0.fb"
+	switch ":ioport4:pin0.fb==>:ioport4:hsiom_in0.hsiom0_in"
+	switch ":ioport4:hsiom_in0.fixed_DPSLP_3==>:m0s8scbcell_0__mosi_s__hsiom_permute.ioport4__fixed_out_p0_DPSLP_3"
+	switch ":m0s8scbcell_0__mosi_s__hsiom_permute.m0s8scbcell_0__mosi_s==>:m0s8scbcell_0.mosi_s"
+	term   ":m0s8scbcell_0.mosi_s"
+end \EXPANSION_PORT:Net_903\
 net \USER_PORT:Net_896\
 	term   ":ioport0:pin5.fb"
 	switch ":ioport0:pin5.fb==>:ioport0:hsiom_in5.hsiom5_in"

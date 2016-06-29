@@ -16,18 +16,19 @@
 ##################################################################### 
                     1::Clock Frequency Summary
 ===================================================================== 
-Number of clocks: 11
-Clock: ClockBlock/ff_div_3  | N/A  | Target: 100.00 MHz  | 
-Clock: Clock_1              | N/A  | Target: 24.00 MHz   | 
-Clock: Clock_1(FFB)         | N/A  | Target: 24.00 MHz   | 
-Clock: CyHFCLK              | N/A  | Target: 24.00 MHz   | 
-Clock: CyILO                | N/A  | Target: 0.03 MHz    | 
-Clock: CyIMO                | N/A  | Target: 24.00 MHz   | 
-Clock: CyLFCLK              | N/A  | Target: 0.03 MHz    | 
-Clock: CyRouted1            | N/A  | Target: 24.00 MHz   | 
-Clock: CySYSCLK             | N/A  | Target: 24.00 MHz   | 
-Clock: SCBCLK               | N/A  | Target: 12.00 MHz   | 
-Clock: SCBCLK(FFB)          | N/A  | Target: 12.00 MHz   | 
+Number of clocks: 12
+Clock: Clock_1                | N/A  | Target: 24.00 MHz  | 
+Clock: Clock_1(FFB)           | N/A  | Target: 24.00 MHz  | 
+Clock: CyHFCLK                | N/A  | Target: 24.00 MHz  | 
+Clock: CyILO                  | N/A  | Target: 0.03 MHz   | 
+Clock: CyIMO                  | N/A  | Target: 24.00 MHz  | 
+Clock: CyLFCLK                | N/A  | Target: 0.03 MHz   | 
+Clock: CyRouted1              | N/A  | Target: 24.00 MHz  | 
+Clock: CySYSCLK               | N/A  | Target: 24.00 MHz  | 
+Clock: EXPANSION_SCBCLK       | N/A  | Target: 12.00 MHz  | 
+Clock: EXPANSION_SCBCLK(FFB)  | N/A  | Target: 12.00 MHz  | 
+Clock: SCBCLK                 | N/A  | Target: 12.00 MHz  | 
+Clock: SCBCLK(FFB)            | N/A  | Target: 12.00 MHz  | 
 
  =====================================================================
                     End of Clock Frequency Summary

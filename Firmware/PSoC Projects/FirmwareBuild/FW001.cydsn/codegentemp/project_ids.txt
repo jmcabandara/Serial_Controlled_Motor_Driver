@@ -1,5 +1,7 @@
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|30fcd271-d672-4de2-9fa7-cc8566c8bba3
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c0758fe8-5e4a-4171-922d-deaad3d76240
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|83a8aa02-315d-4ff7-afe5-77ed5674f71a
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|212ceb01-dfea-477b-b4b0-2882b48f848f
-C:\github\Serial_Controlled_Motor_Driver\Firmware\PSoC Projects\FirmwareBuild\FW001.cydsn\FW001.cyprj|0ad3a6f7-2fa3-4702-a83e-62c11dad0440
+C:\github\Serial_Controlled_Motor_Driver\Firmware\PSoC Projects\FirmwareBuild\FW001.cydsn\FW001.cyprj|565dbc4b-7857-4804-af75-6f2a32871d90
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|3fdf6d13-58eb-415a-8639-a503aee49d03
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|fa04d7cd-7c03-4ba5-9e30-45a8781a17f3
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|c7d6b311-08e5-4585-a97d-c29a2ce7bc5d
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|6c537e67-a567-443d-ac69-a4a9005aa388
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev\psoc4\PSoC4AnalogDevice\psoc4arch.cydsn\psoc4arch.cyprj|d8cebf6f-afb3-4656-8fa2-d2d4d3e0c91b
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|5f5fa40e-62fe-46f2-9022-b9bf5aed7b8d
